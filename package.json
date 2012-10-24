@@ -1,0 +1,12 @@
+{
+  "name": "rumiscraper",
+  "version": "1.0.0",
+  "description": "Scrape Ruminations data before site closes down",
+  "bin": {
+    "rumiscraper" : "./app.js"
+  },
+  "dependencies": {
+    "request" : ">=2.11.4",
+    "cheerio" : ">=0.10.1"
+  }
+}
