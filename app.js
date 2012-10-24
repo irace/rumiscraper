@@ -14,6 +14,7 @@ require('request')('http://ruminations.com/' + userName, function (err, response
 
   var ruminations = $('.boxs').map(function () {
     var $box = $(this)
+
     return {
       text: $box.find('.boxs-text').text().trim(),
       points: +$box.find('.boxs-button-points .size-1').text()
