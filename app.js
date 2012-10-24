@@ -8,7 +8,7 @@ if (process.argv.length != 3) {
 var userName = process.argv[2]
 
 require('request')('http://ruminations.com/' + userName, function (err, response, html) {
-  if (err) throw err;
+  if (err) throw err
 
   $ = require('cheerio').load(html)
 
@@ -23,7 +23,7 @@ require('request')('http://ruminations.com/' + userName, function (err, response
   var fileName = userName + '.json';
 
   require('fs').writeFile(fileName, JSON.stringify(ruminations), function (err) {
-    if (err) throw err;
+    if (err) throw err
     console.log('Saved to ' + fileName)
   })
 })
