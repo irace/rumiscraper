@@ -24,6 +24,7 @@ require('request')('http://ruminations.com/' + userName, function (err, response
 
   require('fs').writeFile(fileName, JSON.stringify(ruminations), function (err) {
     if (err) throw err
+
     console.log('Saved to ' + fileName)
   })
 })
