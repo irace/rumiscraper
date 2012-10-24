@@ -20,7 +20,7 @@ require('request')('http://ruminations.com/' + userName, function (err, response
     }
   })
 
-  var fileName = userName + '.json';
+  var fileName = userName + '.json'
 
   require('fs').writeFile(fileName, JSON.stringify(ruminations), function (err) {
     if (err) throw err
